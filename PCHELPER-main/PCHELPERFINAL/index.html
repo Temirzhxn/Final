@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>PCHELPER</title>
+
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1024px-Circle-icons-computer.svg.png">
+
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="catagories-side-menu">
+
+        <div id="sideMenuClose">
+            <i class="fa fa-close"></i>
+        </div>
+
+        <div class="nav-side-menu">
+            <div class="menu-list">
+                <h6>Sign Up</h6>
+                <ul id="menu-content" class="menu-content collapse out">
+                    <form>
+                        <input type="text" id="number" placeholder="+8-777-777-77-77">
+                        <div id="recaptcha-container"></div>
+                        <button type="button" onclick="phoneAuth();">SendCode</button>
+                    </form><br>
+                    <h1>Enter verification code</h1>
+                    <form>
+                        <input type="text" id="verificationCode" placeholder="Enter verification code">
+                        <button type="button" onclick="codeverify();">Verify</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper">
+
+        <header class="header_area">
+
+            <div class="top_header_area">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-end">
+
+                        <div class="col-12 col-lg-7">
+                            <div class="top_single_area d-flex align-items-center">
+
+                                <div class="top_logo">
+                                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1024px-Circle-icons-computer.svg.png" alt="" style="height: 150px;"></a>
+                                </div>
+
+                                <div class="header-cart-menu d-flex align-items-center ml-auto">
+                                    <div class="header-right-side-menu ml-15">
+                                        <a href="#" id="sideMenuBtn"><i class="fa fa-user" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_header_area">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-12 d-md-flex justify-content-between">
+                            <div class="header-social-area">
+                              <i>Our contacts</i>
+                              <a href="https://github.com/Anchor1te"><i class="fa fa-github" aria-hidden="true"></i></a>
+                              <a href="https://www.youtube.com/watch?v=YQnRjcZ5uT8&t=21s  "><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                              <a href="https://www.instagram.com/anchor1te.exe/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                              <a href="https://www.instagram.com/asusrog/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+
+                            <div class="main-menu-area">
+                                <nav class="navbar navbar-expand-lg align-items-start">
+
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#karl-navbar" aria-controls="karl-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-menu"></i></span></button>
+
+                                    <div class="collapse navbar-collapse align-items-start collapse" id="karl-navbar">
+                                        <ul class="navbar-nav animated" id="nav">
+                                            <li class="nav-item active"><a class="dropdown-item" href="index.html">Home</a></li>
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item" href="shop.html">Shop</a>
+                                            </li>
+                                            <li class="nav-item"><a class="dropdown-item" href="Authorization.html">Authorization</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <div class="tel-line">
+                                <a href="tel:+8-747-581-76-52"><i class="fa fa-phone"></i> +8-747-581-76-52</a>
+                                <button onclick="toggleTheme('dark');">Dark</button>
+                                <button onclick="toggleTheme('light');">Light Mode</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="new_arrivals_area section_padding_100_0 clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section_heading text-center">
+                            <h2>New components for your computer</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="karl-projects-menu mb-100">
+                <div class="text-center portfolio-menu">
+                    <button class="btn active" data-filter="*">ALL</button>
+                    <button class="btn" data-filter=".parts">PARTS</button>
+                    <button class="btn" data-filter=".access">ACCESSORIES</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row karl-new-arrivals">
+
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item access wow fadeInUpBig" data-wow-delay="0.2s">
+
+                        <div class="product-img">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/76254D2F-60AE-4012-BC00-2F9145B78A58/w717/h525" alt="">
+                        </div>
+
+                        <div class="product-description">
+                            <h4 class="product-price">$87</h4>
+                            <p>ROG Strix Go Core Moonlight White</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item access wow fadeInUpBig" data-wow-delay="0.3s">
+
+                        <div class="product-img">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/06E888A5-BDA9-44DE-8612-FC860F364DC9/w717/h525" alt="">
+                        </div>
+
+                        <div class="product-description">
+                            <h4 class="product-price">$103</h4>
+                            <p>ROG Gladius II Wireless</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item access wow fadeInUpBig" data-wow-delay="0.4s">
+
+                        <div class="product-img">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/3ADA3273-1B06-49A5-86B0-C52300C6CA9F/w717/h525" alt="">
+                        </div>
+
+                        <div class="product-description">
+                            <h4 class="product-price">$119</h4>
+                            <p>ROG Strix Scope NX TKL Moonlight White</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item parts wow fadeInUpBig" data-wow-delay="0.5s">
+                        <div class="product-img">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/684DD066-82FC-4C2B-A0DB-7957EA004D40/w717/h525" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h4 class="product-price">$338</h4>
+                            <p>ROG THOR 1200P</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item parts wow fadeInUpBig" data-wow-delay="0.6s">
+                        <div class="product-img">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/65D21F0F-51B0-4AB6-9EB1-E21ACDE971A5/w717/h525" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h4 class="product-price">$1384</h4>
+                            <p>ROG Strix RTX3070 white V2</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item parts man wow fadeInUpBig" data-wow-delay="0.7s">
+                        <div class="product-img">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/D2052B67-2491-4DA1-9E33-97B5326254EA/w717/h525" alt="">
+
+                        </div>
+                        <div class="product-description">
+                            <h4 class="product-price">$799</h4>
+                            <p>ASUS Z690 APEX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-discount-area d-md-flex align-items-center">
+
+            <div class="single-discount-area">
+                <h5>Original ASUS products</h5>
+                <h6>Check out our catalog</h6>
+            </div>
+
+            <div class="single-discount-area">
+              <h5>Сomputer parts</h5>
+              <h6>Check out our catalog</h6>
+            </div>
+
+            <div class="single-discount-area">
+                <h5>Сomputer peripherals</h5>
+                <h6>Check out our catalog</h6>
+            </div>
+        </section>
+
+
+
+        <section class="welcome_area">
+            <div class="welcome_slides owl-carousel">
+
+                <div class="single_slide height-800 bg-img background-overlay" style="background-image: url(https://chudo.tech/wp-content/uploads/2019/07/ROG-Phone-25.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="welcome_slide_text">
+                                    <h6 data-animation="bounceInDown" data-delay="0" data-duration="500ms">ROG Series Smartphones</h6>
+                                    <h2 data-animation="fadeInUp" data-delay="500ms" data-duration="500ms">All the power is in your hands</h2>
+                                    <a href="https://rog.asus.com/ru/phones-group/allmodels" class="btn karl-btn" data-animation="fadeInUp" data-delay="1s" data-duration="500ms">More detailed</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single_slide height-800 bg-img background-overlay" style="background-image: url(https://i2hard.ru/upload/iblock/74b/74bad3a92d37e2166c00f17dba1df417.png);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="welcome_slide_text">
+                                    <h6 data-animation="fadeInDown" data-delay="0" data-duration="500ms">STRIX gaming computers</h6>
+                                    <h2 data-animation="fadeInUp" data-delay="500ms" data-duration="500ms">Accelerate your victory</h2>
+                                    <a href="https://rog.asus.com/ru/desktops-group/" class="btn karl-btn" data-animation="fadeInLeftBig" data-delay="1s" data-duration="500ms">More detailed</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single_slide height-800 bg-img background-overlay" style="background-image: url(https://www.notebookcheck-ru.com/fileadmin/_processed_/9/9/csm_aIEtRvLk_cca3fbaac1.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="welcome_slide_text">
+                                    <h6 data-animation="fadeInDown" data-delay="0" data-duration="500ms">Fast, powerful and mobile</h6>
+                                    <h2 data-animation="bounceInDown" data-delay="500ms" data-duration="500ms">Take a new laptop from ROG with you</h2>
+                                    <a href="https://rog.asus.com/ru/laptops-group/" class="btn karl-btn" data-animation="fadeInRightBig" data-delay="1s" data-duration="500ms">More detailed</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top_catagory_area d-md-flex clearfix">
+
+            <div class="single_catagory_area d-flex align-items-center bg-img" style="background-image: url(https://www.ixbt.com/img/n1/news/2021/10/2/ASUS-ROG-Zephyrus-Duo-16-AMD-Ryzen-6900HX-CPU-NVIDIA-GeForce-RTX-3080-Ti-Laptop-GPU_large.jpg);">
+                <div class="catagory-content">
+                    <h6>On laptops</h6>
+                    <h2>Sale 20%</h2>
+                    <a href="https://rog.asus.com/ru/laptops-group/" class="btn karl-btn">SHOP NOW</a>
+                </div>
+            </div>
+
+            <div class="single_catagory_area d-flex align-items-center bg-img" style="background-image: url(https://www.asus.com/websites/global/products/QnNtOrwy8zK8HKmZ/img/bg-05-mobile.jpg);">
+                <div class="catagory-content">
+                    <h6>For accessories, except for new arrivals</h6>
+                    <h2>30% discount for authorized users</h2>
+                    <a href="https://rog.asus.com/ru/mice-mouse-pads-group/" class="btn karl-btn" >SHOP NOW</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="offer_area height-700 section_padding_100 bg-img" style="background-image: url(https://dlcdnwebimgs.asus.com/files/media/6B37D3B0-248E-4697-BF5B-2EC5C47CE408/V1/img/kv-1920.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-end justify-content-end">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <div class="offer-content-area wow fadeInUp" data-wow-delay="1s">
+                            <h2>ROG Zephyrus G15 <span class="karl-level">Hot</span></h2>
+                            <div class="offer-product-price">
+                                <h3><span class="regular-price">$169.99</span> $129.99</h3>
+                            </div>
+                            <a href="https://ru.store.asus.com/notebooks/zephyrus/ga503qr_hq092t" class="button">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <footer class="footer_area">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="single_footer_area">
+                            <div class="footer-logo">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1024px-Circle-icons-computer.svg.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-5">
+                        <div class="single_footer_area">
+                            <div class="footer_heading mb-30">
+                                <h6>Subscribe to our newsletter</h6>
+                            </div>
+                            <div class="subscribtion_form">
+                                <form action="#" method="post">
+                                    <input type="email" name="mail" class="mail" placeholder="Enter your email here">
+                                    <button type="submit" class="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+
+                <div class="footer_bottom_area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer_social_area text-center">
+                                <a href="https://github.com/Anchor1te"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="https://www.youtube.com/watch?v=YQnRjcZ5uT8&t=21s  "><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/anchor1te.exe/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/asusrog/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/NumberAuthentication.js"></script>
+</body>
+
+</html>

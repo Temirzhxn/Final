@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>PCHELPER</title>
+
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1024px-Circle-icons-computer.svg.png">
+
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="catagories-side-menu">
+
+        <div id="sideMenuClose">
+            <i class="fa fa-close"></i>
+        </div>
+
+        <div class="nav-side-menu">
+            <div class="menu-list">
+                <h6>Sign Up</h6>
+                <ul id="menu-content" class="menu-content collapse out">
+                    <form>
+                        <input type="text" id="number" placeholder="+8-777-777-77-77">
+                        <div id="recaptcha-container"></div>
+                        <button type="button" onclick="phoneAuth();">SendCode</button>
+                    </form><br>
+                    <h1>Enter verification code</h1>
+                    <form>
+                        <input type="text" id="verificationCode" placeholder="Enter verification code">
+                        <button type="button" onclick="codeverify();">Verify</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper">
+
+        <header class="header_area">
+
+            <div class="top_header_area">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-end">
+
+                        <div class="col-12 col-lg-7">
+                            <div class="top_single_area d-flex align-items-center">
+
+                                <div class="top_logo">
+                                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1024px-Circle-icons-computer.svg.png" alt="" style="height: 150px;"></a>
+                                </div>
+
+                                <div class="header-cart-menu d-flex align-items-center ml-auto">
+                                    <div class="header-right-side-menu ml-15">
+                                        <a href="#" id="sideMenuBtn"><i class="fa fa-user" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_header_area">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-12 d-md-flex justify-content-between">
+                            <div class="header-social-area">
+                              <i>Our contacts</i>
+                              <a href="https://github.com/Anchor1te"><i class="fa fa-github" aria-hidden="true"></i></a>
+                              <a href="https://www.youtube.com/watch?v=YQnRjcZ5uT8&t=21s  "><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                              <a href="https://www.instagram.com/anchor1te.exe/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                              <a href="https://www.instagram.com/asusrog/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+
+                            <div class="main-menu-area">
+                                <nav class="navbar navbar-expand-lg align-items-start">
+
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#karl-navbar" aria-controls="karl-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-menu"></i></span></button>
+
+                                    <div class="collapse navbar-collapse align-items-start collapse" id="karl-navbar">
+                                        <ul class="navbar-nav animated" id="nav">
+                                            <li class="nav-item active"><a class="dropdown-item" href="index.html">Home</a></li>
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item" href="shop.html">Shop</a>
+                                            </li>
+                                            <li class="nav-item"><a class="dropdown-item" href="Authorization.html">Authorization</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <div class="tel-line">
+                                <a href="tel:+8-747-581-76-52"><i class="fa fa-phone"></i> +8-747-581-76-52</a>
+                                <button onclick="toggleTheme('dark');">Dark</button>
+                                <button onclick="toggleTheme('light');">Light Mode</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+      <section class="top-discount-area d-md-flex align-items-center">
+
+          <div class="single-discount-area">
+              <h5>Original ASUS products</h5>
+              <h6>Check out our catalog</h6>
+          </div>
+
+          <div class="single-discount-area">
+            <h5>Сomputer parts</h5>
+            <h6>Check out our catalog</h6>
+          </div>
+
+          <div class="single-discount-area">
+              <h5>Сomputer peripherals</h5>
+              <h6>Check out our catalog</h6>
+          </div>
+      </section>
+
+        <div class="checkout_area section_padding_100">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="checkout_details_area mt-50 clearfix">
+                                <h5>Authorization</h5>
+
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="first_name">First Name <span>*</span></label>
+                                        <input type="text" class="form-control" id="first_name" value="" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="last_name">Last Name <span>*</span></label>
+                                        <input type="text" class="form-control" id="last_name" value="" required>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                      <ul>
+                                        <li>
+                                          <label for="password">Password <span>*</span></label>
+                                          <input type="password" class="form-control mb-3" name="password" id="password" value="">
+                                          <span class="password-showhide">
+                                            <li>
+                                              <label for="password">Confirm password <span>*</span></label>
+                                              <input type="password" class="form-control mb-3" name="password" id="confirmPassword" value="">
+                                              <span class="confirm-password-showhide">
+                                                <span class="show-password">Show</span>
+                                                <span class="hide-password">hide</span>
+                                              </span>
+                                              <li>
+                                      </ul>
+
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="country">Country <span>*</span></label>
+                                        <select class="custom-select d-block w-100" id="country">
+                                          <option value="kza">Kazakhstan</option>
+                                        <option value="usa">United States</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="ger">Germany</option>
+                                        <option value="cana">Canada</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="street_address">Address <span>*</span></label>
+                                        <input type="text" class="form-control mb-3" id="street_address" value="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="city">Town/City <span>*</span></label>
+                                        <input type="text" class="form-control" id="city" value="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="phone_number">Phone No <span>*</span></label>
+                                        <input type="number" class="form-control" id="phone_number" min="0" value="">
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <label for="email_address">Email Address <span>*</span></label>
+                                        <input type="email" class="form-control" id="email_address" value="">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="custom-control custom-checkbox d-block mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Create an accout</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-block">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">Subscribe to our newsletter</label><br>
+                                            <a href="#" class="button">Create now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-5 ml-lg-auto">
+                        <div class="order-details-confirmation">
+                                <h5>About us</h5>
+
+                            <ul class="mb-4">
+                                <li><span>Created by:</span></li>
+                                <li><span>Abzal Gabdullin and Temirzhan Abdrashov</span></li>
+                                <li><span>We are located at:</span></li>
+                            </ul>
+                            <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=astana%20it%20university+(AITU)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="600" frameborder="0">
+                            </iframe>
+                            </div>
+
+                            <div id="accordion" role="tablist" class="mb-4">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingOne">
+                                        <h6 class="mb-0">
+                                            <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><i class="fa fa-circle-o mr-3"></i>Gabdullin Abzal</a>
+                                        </h6>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>I studied at the school lyceum number 85 of the city of Nursultan perfectly. I am currently studying at Astana It University, at the Faculty of Cybersecurity. I know basic programming in C++. I own html, css, javascript. I am well versed in hardware and computer architecture. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwo">
+                                        <h6 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-circle-o mr-3"></i>ABDRASHOV TEMIRZHAN</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>I am 18 years old. I graduated from the Daryn School for gifted children.I am currently studying at Astana IT University, which is considered one of the best universities in the country.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer_area">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="single_footer_area">
+                            <div class="footer-logo">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1024px-Circle-icons-computer.svg.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-5">
+                        <div class="single_footer_area">
+                            <div class="footer_heading mb-30">
+                                <h6>Subscribe to our newsletter</h6>
+                            </div>
+                            <div class="subscribtion_form">
+                                <form action="#" method="post">
+                                    <input type="email" name="mail" class="mail" placeholder="Enter your email here">
+                                    <button type="submit" class="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+
+                <div class="footer_bottom_area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer_social_area text-center">
+                                <a href="https://github.com/Anchor1te"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="https://www.youtube.com/watch?v=YQnRjcZ5uT8&t=21s  "><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/anchor1te.exe/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/asusrog/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>
